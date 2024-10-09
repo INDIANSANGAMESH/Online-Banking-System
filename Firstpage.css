@@ -1,0 +1,75 @@
+body {
+    font-family: 'Quicksand', sans-serif; 
+    background-color: #f4f4f4;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.role-selection {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Gap between the role boxes */
+    margin-bottom: 20px;
+}
+
+.role {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.role:hover {
+    transform: scale(1.1);
+}
+
+.role-logo {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Specifically target links inside the .role class */
+.role a {
+    text-decoration: none;  /* Remove underline */
+    color: inherit;         /* Inherit the text color */
+    display: block;         /* Ensure the link covers the block */
+    text-align: center;     /* Center-align the text */
+}
+
+#selected-role {
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif; 
+}

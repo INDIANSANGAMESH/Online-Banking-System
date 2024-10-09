@@ -1,0 +1,70 @@
+/* Global Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* Loan Options Layout */
+.loan-options {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 40px; /* Increased space between the options */
+}
+
+.option {
+    flex: 1; /* Make the buttons take equal space */
+    width: 300px; /* Width for better visibility */
+    height: 250px; /* Set height for the buttons */
+    background-color: #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.option img {
+    width: 100px; /* Increased logo size for better visibility */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between logo and text */
+}
+
+.option:hover {
+    transform: scale(1.05);
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Adjust for smaller screens */
+@media screen and (max-width: 600px) {
+    .option {
+        font-size: 18px; /* Slightly smaller font for smaller screens */
+        width: 250px; /* Adjusted width for smaller screens */
+    }
+
+    .option img {
+        width: 80px; /* Adjusted logo size for smaller screens */
+    }
+}

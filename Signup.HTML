@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System Sign-Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Be an Hitler...</h2>
+        <form class="signup-form" action="signup.php" method="post" enctype="multipart/form-data">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" pattern="[A-Za-z ]+" required>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your phone number" maxlength="10" required>
+                <small class="input-hint">Please enter a valid 10-digit phone number.</small>
+            </div>
+            <div class="input-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+                <small class="input-hint">Choose your date of birth from the calendar.</small>
+            </div>
+            <div class="input-group">
+                <label for="password">Create Password</label>
+                <input type="password" id="password" name="password" minlength="8" placeholder="Create a strong password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required>
+            </div>
+            <div class="input-group">
+                <label for="photo">Upload Your Photo</label>
+                <input type="file" id="photo" name="photo" accept=".png, .jpj, .jpej" required>
+                <small class="input-hint">Only jpj,jpej,png format is allowed.</small>
+            </div>
+            <button type="submit" class="signup-btn" value="signup" name="">sign up</button>
+            <p class="help-text">Already have an account? <a href="login.html">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>

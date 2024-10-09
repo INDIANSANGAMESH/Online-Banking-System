@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Transaction</title>
+    <link rel="stylesheet" href="payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Account Transaction</h1>
+        <form action="payment.php" method="POST">
+            <div class="input-group">
+                <label for="account-number">Account Number</label>
+                <input type="text" id="account-number" name="id" placeholder="Enter your account number" required>
+            </div>
+
+            <div class="toggle-group">
+                <label>Select Action:</label><br><br>
+                <div class="toggle-options">
+                    <input type="radio" id="credit" name="transaction-type" value="credit" required>
+                    <label for="credit" class="toggle-option">Credit</label>
+
+                    <input type="radio" id="debit" name="transaction-type" value="debit" required>
+                    <label for="debit" class="toggle-option">Debit</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter Amount" required min="1">
+            </div>
+
+            <button type="submit">Proceed</button>
+        </form>
+    </div>
+</body>
+</html>

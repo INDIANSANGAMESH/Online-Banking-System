@@ -1,0 +1,92 @@
+/* Global Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* Circle Layout for Options */
+.circle-options {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.option:hover {
+    transform: scale(1.1);
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Positioning each option around the circle */
+.balance {
+    top: -40px;
+    left: calc(50% - 60px);
+}
+
+.transactions {
+    bottom: -40px;
+    right: calc(50% - 60px);
+}
+
+.payment {
+    left: -40px;
+    bottom: calc(50% - 60px);
+}
+
+.offers {
+    right: -40px;
+    top: calc(50% - 60px);
+}
+
+/* Adjust for smaller screens */
+@media screen and (max-width: 500px) {
+    .circle-options {
+        width: 240px;
+        height: 240px;
+    }
+    .option {
+        width: 90px;
+        height: 90px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <h1>HITLER BANK</h1>
+        <h2>Login</h2>
+        <form class="login-form" action="login.php" method="post"> <!-- Updated action -->
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your phone number" maxlength="10" required>
+                <small class="input-hint">Please enter a valid 10-digit phone number.</small>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <p class="help-text">Forgot password? <a href="#">Reset here</a></p>
+            <p class="login-switch">Don't have an account? <a href="signup.html">Sign up here</a></p>
+        </form>
+    </div>
+</body>
+</html>
